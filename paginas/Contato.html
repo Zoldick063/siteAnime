@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/contato.css">
+
+    <body>
+      <header>
+        <nav>
+    <a href="../index.html">
+      <img src="../imagens/anime-mania-logo_jpg_640.jpg"
+      alt="Anime Mania" width="163" height="72" class="logo">
+      </a>
+              <ul class="menu">
+                  <li><a href="../index.html">Início</a></li>
+                  <li><a href="Contato.html">Cadastro</a></li>
+                  <li><a href="Noticias.html">Notícias</a></li>
+              </ul>
+          </nav>
+      </header>
+    
+    <div class="container">
+        <h1>Cadastro</h1>
+        
+        <form action="processar.php" method="post">
+
+            <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome" maxlength="25" required>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" value="email" maxlength="35" required>
+            
+            <label for="password">Senha</label>
+            <input type="password" name="senha" id="senha" value="senha" maxlength="8" required>
+            
+            <label for="confSenha">Confirme a Senha</label>
+            <input type="password" name="confSenha" id="confSenha" value="confSenha" maxlength="8" required>
+            
+            <label for="mes">Mês</label>
+            <input type="month" name="mes" id="mes" max="2023-01" min="1923-01" value="mes"required >
+            
+            <label for="generos">Gênero</label>
+            <select name="generos" id="generos">
+                <option value="Shonen">少年 (Shonen) - Público Jovem Masculino</option>
+                <option value="Shojo">少女 (Shojo) - Público Jovem Feminino</option>
+                <option value="Seinen">青年 (Seinen) - Público Adulto Masculino</option>
+                <option value="Josei">女性 (Josei) - Público Adulto Feminino</option>
+                <option value="Kodomomuke">子供向け (Kodomomuke) - Para Crianças</option>
+                <option value="Jidaigeki">時代劇 (Jidaigeki) - Época Histórica</option>
+                <option value="Mecha">メカ (Mecha) - Ficção Científica e Robôs</option>
+                <option value="Isekai">異世界 (Isekai) - Mundo Alternativo</option>
+                <option value="Harem">ハーレム (Harem) - Harém</option>
+                <option value="Yuri">百合 (Yuri) - Relações Lésbicas</option>
+                <option value="Yaoi">やおい (Yaoi) - Relações Homossexuais Masculinas</option>
+            </select>
+        
+            <input type="submit" name="btCadastrar" id="btCadastrar" value="enviar">
+        </form>
+    </div>
+		<p>&nbsp;</p>
+        
+<footer>
+		<p>&copy; 2023 Anime Mania. Todos os direitos reservados. | 
+			<a href="https://policies.google.com/terms?hl=pt-PT">Termos de Uso</a> | 
+			<a href="https://policies.google.com/terms?hl=pt-BR">Política de Privacidade</a>
+		</p>
+	</footer>
+    
+</body>
+</head>
+</html>
